@@ -1,30 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+    <v-app-bar app color="indigo" dark>
+      <v-toolbar-title>Vue 3 POSTS</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-tabs v-model="currentTab">
+        <v-tab to="/one">Tab One</v-tab>
+        <v-tab to="/two">Tab Two</v-tab>
+      </v-tabs>
+    </v-app-bar>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import { ref } from "vue";
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  setup() {
+    const currentTab = ref(0);
+    return { currentTab };
+  },
+};
+</script>
