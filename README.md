@@ -1,5 +1,5 @@
 # project_test
-![alt text](imageVue.png)
+![alt text](image-1.png)
 
 ## Приложение (черновой вариант)
 - Отображает cписок постов c API
