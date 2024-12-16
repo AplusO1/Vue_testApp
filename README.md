@@ -1,19 +1,15 @@
 # project_test
+![alt text](imageVue.png)
 
-## Project setup
-```
-npm install
-```
+## Приложение (черновой вариант)
+- Отображает cписок постов c API
+- 1 Страница, позволяет взаимодействовать с постами (добавлять, редактировать, удалять)
+- 2 Страница, позволяет взаимодействовать с файлами (отправлять, скачивать)
+- Фоновое изображение меняется в соответствии с временем суток (утро/день/вечер/ночь)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Инструкция по запуску
+- Создайте папку для проекта и перейдите в неё.
+- Склонируйте репозиторий `git clone git@github.com:AplusO1/Vue_testApp.git`
+- Установите зависимости `npm install`
+- Запускайте проект `npm run serve`
+---
